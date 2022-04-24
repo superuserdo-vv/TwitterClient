@@ -1,16 +1,16 @@
-/* * {
+* {
     padding: 0;
     margin: 0;
-} */
+}
 
 #tweets {
-    font-size: 20px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: darkorange;
     position: absolute;
-    top: 5%;
-    left: 5%;
+    top: 1%;
+    left: 1%;
     /* transform: translate(-50%, -50%); */
 }
 
@@ -18,8 +18,14 @@
     font-size: 16px;
     background-color: yellow;
     position: absolute;
-    top: 20%;
-    left: 5%;
+    top: 6%;
+    left: 1%;
+}
+
+#images {
+    position: absolute;
+    top: 10%;
+    left: 1%;
 }
 
 #imgs {

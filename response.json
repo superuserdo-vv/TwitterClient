@@ -1,0 +1,115 @@
+{
+    "data": [
+        {
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 14,
+                        "username": "timbougami",
+                        "id": "4804737213"
+                    }
+                ],
+                "urls": [
+                    {
+                        "start": 28,
+                        "end": 51,
+                        "url": "https://t.co/Dr4o9Tvrp9",
+                        "expanded_url": "https://twitter.com/timbougami/status/1518198475724398594/photo/1",
+                        "display_url": "pic.twitter.com/Dr4o9Tvrp9"
+                    }
+                ]
+            },
+            "text": "RT @timbougami: casual Aina https://t.co/Dr4o9Tvrp9",
+            "id": "1518240520124112896",
+            "attachments": {
+                "media_keys": [
+                    "3_1518198320765751296"
+                ]
+            }
+        },
+        {
+            "entities": {
+                "annotations": [
+                    {
+                        "start": 0,
+                        "end": 1,
+                        "probability": 0.3016,
+                        "type": "Person",
+                        "normalized_text": "半沢"
+                    },
+                    {
+                        "start": 16,
+                        "end": 19,
+                        "probability": 0.8827,
+                        "type": "Person",
+                        "normalized_text": "谷川さん"
+                    }
+                ]
+            },
+            "text": "半沢の2期も面白かった\n開投銀の谷川さんが好きです\nお金は大事やね…オークスまで大人しくしとこ",
+            "id": "1518234162414637056"
+        },
+        {
+            "text": "お腹空いてるのは知ってたけどこんな足がガクガクしてたとは",
+            "id": "1518226036248690689"
+        },
+        {
+            "entities": {
+                "mentions": [
+                    {
+                        "start": 3,
+                        "end": 16,
+                        "username": "jeonghee1414",
+                        "id": "2585157547"
+                    }
+                ],
+                "urls": [
+                    {
+                        "start": 49,
+                        "end": 72,
+                        "url": "https://t.co/yI49LwlKyb",
+                        "expanded_url": "https://twitter.com/jeonghee1414/status/1518215792227393539/photo/1",
+                        "display_url": "pic.twitter.com/yI49LwlKyb"
+                    }
+                ],
+                "hashtags": [
+                    {
+                        "start": 38,
+                        "end": 48,
+                        "tag": "100日チャレンジ"
+                    }
+                ]
+            },
+            "text": "RT @jeonghee1414: 7日目,Ninomae Ina'nis\n#100日チャレンジ https://t.co/yI49LwlKyb",
+            "id": "1518225837652590593",
+            "attachments": {
+                "media_keys": [
+                    "3_1518215785193537537"
+                ]
+            }
+        },
+        {
+            "text": "家の鍵見つからんくて外出れなかったけど見つかったので外出れるね。なにか食べるものを…プリーズ",
+            "id": "1518225719406776320"
+        }
+    ],
+    "includes": {
+        "media": [
+            {
+                "media_key": "3_1518198320765751296",
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FRG5VDfWUAARKyw.jpg"
+            },
+            {
+                "media_key": "3_1518215785193537537",
+                "type": "photo",
+                "url": "https://pbs.twimg.com/media/FRHJNnjaAAEO-VN.jpg"
+            }
+        ]
+    },
+    "meta": {
+        "result_count": 5,
+        "next_token": "7140dibdnow9c7btw420z64e9qgkaddjddsc00r4tf1gw"
+    }
+}

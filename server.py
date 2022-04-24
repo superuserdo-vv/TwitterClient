@@ -1,3 +1,6 @@
+# localhost:8000
+# Ctrl+C で強制終了(ラグあり)
+
 import http.server
 import socketserver
 
