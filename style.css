@@ -9,23 +9,31 @@
     text-align: center;
     background-color: darkorange;
     position: absolute;
-    top: 1%;
-    left: 1%;
+    top: 10px;
+    left: 10px;
     /* transform: translate(-50%, -50%); */
 }
 
-.getTweet {
+.getURL {
     font-size: 16px;
     background-color: yellow;
     position: absolute;
-    top: 6%;
-    left: 1%;
+    top: 50px;
+    left: 10px;
+}
+
+.showURL {
+    font-size: 16px;
+    background-color: orange;
+    position: absolute;
+    top: 50px;
+    left: 75px;
 }
 
 #images {
     position: absolute;
-    top: 10%;
-    left: 1%;
+    top: 100px;
+    left: 10px;
 }
 
 #imgs {

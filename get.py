@@ -9,7 +9,7 @@ def main():
 
     search_url = "https://api.twitter.com/2/lists/1517926446240768000/tweets"
 
-    params = {'max_results': 5, 'expansions': 'attachments.media_keys', 'tweet.fields': 'entities', 'media.fields': 'url'}
+    params = {'max_results': 10, 'expansions': 'attachments.media_keys', 'tweet.fields': 'entities', 'media.fields': 'url'}
 
     headers = {"Authorization": "Bearer {}".format(bearer_token)}
 
@@ -18,4 +18,7 @@ def main():
     pprint.pprint(response.json(), indent=4)
 
     with codecs.open('response.json', 'w', 'utf-8') as f:
+        json.dump(response.json(), f, ensure_ascii=False, indent=4)
+
+    with codecs.open('get/index.html', 'w', 'utf-8') as f:
         json.dump(response.json(), f, ensure_ascii=False, indent=4)
