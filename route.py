@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def users():
-    return "<p>{}</p>".format(request.method)
+    return get.htmlReturn()
 
 @app.route("/get")
 def gets():
