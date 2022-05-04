@@ -1,18 +1,16 @@
 const getURL = document.querySelector(".getURL");
 const showURL = document.querySelector(".showURL");
-const url = "http://localhost:5000/get";
+const url = "http://localhost:5000/tweet";
 var oReq = new XMLHttpRequest();
 
 const urlGet = () => {
-    oReq.addEventListener("load", () => console.log("OK"));
     oReq.open("GET", url);
-    //oReq.responseType = "json";
+    oReq.setRequestHeader("Content-Type", "text/plain")
     oReq.send();
 }
 
 const reqTest = () => {
     console.log(oReq.responseText);
-    console.log(oReq.responseType);
     console.log(oReq.responseURL);
 }
 
