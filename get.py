@@ -2,7 +2,7 @@ import requests
 import os
 import json
 
-def htmlReturn():
+def returnHTML():
     with open("get/index.json", encoding="utf-8") as f:
         return f.read()
 

@@ -1,18 +1,39 @@
-const getURL = document.querySelector(".getURL");
-const showURL = document.querySelector(".showURL");
-const url = "http://localhost:5000/tweet";
+const getButton = document.querySelector(".get");
+const outputButton = document.querySelector(".output");
+const reqURL = "http://localhost:5000/tweet";
 var oReq = new XMLHttpRequest();
 
-const urlGet = () => {
-    oReq.open("GET", url);
-    oReq.setRequestHeader("Content-Type", "text/plain")
+const getURL = () => {
+    oReq.open("GET", reqURL);
+    oReq.setRequestHeader("Content-Type", "text/plain");
     oReq.send();
 }
 
-const reqTest = () => {
-    console.log(oReq.responseText);
-    console.log(oReq.responseURL);
+const refreshImages = () => {
+    if (!oReq.responseURL) {
+        alert("1.get\n2.output");
+        return;
+    }
+    // console.log(oReq.responseText);
+    // console.log(oReq.responseURL);
+    let arr = [];
+    for (let i = 0; i < JSON.parse(oReq.responseText).includes["media"].length; i++) {
+        if (JSON.parse(oReq.responseText).includes["media"][i]["type"] == "photo") {
+            arr.push(JSON.parse(oReq.responseText).includes["media"][i]["url"]);
+        }
+    }
+    arr.forEach((e) => {
+        let imgElement = document.createElement("img");
+        let urlElement = document.createElement("p");
+        let imgArea = document.getElementById("images");
+        let urlArea = document.getElementById("url");
+        imgElement.src = e;
+        imgElement.height = 240;
+        urlElement.textContent = e;
+        imgArea.appendChild(imgElement);
+        urlArea.appendChild(urlElement);
+    });
 }
 
-getURL.addEventListener("click", urlGet);
-showURL.addEventListener("click", reqTest);
+getButton.addEventListener("click", getURL);
+outputButton.addEventListener("click", refreshImages);
