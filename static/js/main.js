@@ -1,5 +1,6 @@
 const getButton = document.querySelector(".get");
 const outputButton = document.querySelector(".output");
+const clickImage = document.getElementById("images");
 const reqURL = "http://localhost:5000/tweet";
 var oReq = new XMLHttpRequest();
 
@@ -37,3 +38,6 @@ const refreshImages = () => {
 
 getButton.addEventListener("click", getURL);
 outputButton.addEventListener("click", refreshImages);
+clickImage.addEventListener("click", e => {
+    if(e.target.src) window.open(e.target.src);
+});
